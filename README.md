@@ -1,22 +1,16 @@
-# sv
+# YT-comment Reader
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+<img width="1090" height="1268" alt="Screenshot-yt" src="https://github.com/user-attachments/assets/889f2cde-8765-4762-9d04-12ed7dc07c1b" />
 
-## Creating a project
+## !For my intended use, the app is still missing its core features:
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```sh
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
-```
+  - Replies Comment folding
+  - Deeper replies should be nested
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Clone the project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+(First install yt-dlp dependency or else project won't work!)
 
 ```sh
 npm run dev
