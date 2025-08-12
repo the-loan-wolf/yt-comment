@@ -7,7 +7,7 @@ export async function POST({ request }) {
 	const posts = req.vidID;
 	return new Promise((resolve) => {
 		exec(
-			`yt-dlp --write-comments --skip-download https://www.youtube.com/watch?v=${posts} -o comments-cache/${posts}`,
+			`yt-dlp --write-comments --skip-download --cookies ~/cookies.txt https://www.youtube.com/watch?v=${posts} -o comments-cache/${posts}`,
 			(error, stdout, stderr) => {
 				if (error) {
 					resolve(new Response(JSON.stringify({ error: stderr }), { status: 500 }));
